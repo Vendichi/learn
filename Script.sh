@@ -7,7 +7,7 @@ read Source
 
 docker build -t vendichi $Source
 wait -n
-docker tag vendichi 192.168.40.197:5000/vendichi:$Tag
+docker tag vendichi 192.168.40.43:5000/vendichi:$Tag
 wait -n
 docker push 192.168.40.197:5000/vendichi:$Tag
 
