@@ -5,11 +5,11 @@ read Tag
 echo "Source:"
 read Source
 
-docker build -t vendichi $Source
+docker build -t yohan $Source
 wait -n
-docker tag vendichi 192.168.40.43:5000/vendichi:$Tag
+docker tag yohan 192.168.40.43:5000/yohan:$Tag
 wait -n
-docker push 192.168.40.197:5000/vendichi:$Tag
+docker push 192.168.40.197:5000/yohan:$Tag
 
 echo "Done"
 
